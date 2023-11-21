@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Crow | Explora tu propio estilo</title>
+
+    <!--Hoja de Estilos-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="Img/Others/Green_Crow_Favicon.png" type="image/x-icon">
+    
+    <!--Configuración Font Awesome-->
+    <script src="https://kit.fontawesome.com/28570c0cab.js" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   
+    <!-------------------- OPEN HEADER ------------------->
+
+    <header class="header">
+
+         <!--Contacto-->
+        <div class="contacto">
+            
+            <a href="mailto:info@greencrow.com"><i class="fa-solid fa-envelope"></i> info@greencrow.com</a>
+            <a href="tel:0034 91 640 45 67"><i class="fa-solid fa-phone"></i> +34 91 640 45 67</a>
+
+        </div>
+        
+        <!--Iconos Redes Sociales-->
+        <div class="red-social">
+            
+            <a href="https://www.tiktok.com/es/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/?locale=es_ES" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+
+        </div>
+    </header>     
+
+    <!-------------------- CLOSE HEADER ------------------->
+
+
+    <!-------------------- OPEN NAVEGADOR ------------------->
+
+    <nav class="navbar" >
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="#"></a>
+            <img src="Img/Others/Green_Crow_Logicon.png" alt="">
+        </div>
+
+        <!-- Links -->
+        <ul class="links">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="tshirts.html">Camisetas</a></li>
+            <li><a href="accessories.html">Accesorios</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+       
+        <!-- Contenedor ICONOS -->
+        <div class="container_icon">
+
+            <!-- Buscador Interno -->
+            <div class="search-bar">
+                <form action="#" method="get">
+                    <input type="text" name="q" placeholder="Buscar...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <!-- Icono Carrito -->
+            <div class="cart-icon">
+                <a href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </div>
+
+            <!-- Icono de login -->
+            <div class="login-icon">
+                <a href="login.html">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+
+        </div>
+        
+    </nav>
+
+    <!-------------------- CLOSE NAVEGADOR ------------------->
+
+
+<!-------------------- OPEN VIDEO ------------------->
+   
+<div class="video-section">
+
+    <!-- Reproducción Auto -->
+    <video autoplay loop muted>
+        <source src="Img/Others/Video_1.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+</video>
+
+    <!-- Texto Video -->
+    <div class="content-overlay">
+        <h1>GREEN CROW | Explora tu propio estilo</h1>
+        <p>¡Descubre la prenda que va contigo!</p>
+
+        <!-- Botón -->
+        <a href="#" class="btn">Descubre más</a>
+    </div>
+</div>
+
+    <!-------------------- CLOSE VIDEO ------------------->
+
+    
+<!--------------------- OPEN PRODUCTOS ---------------------->
+
+<div class="product-section">
+    <h2>| Novedades |</h2>
+
+    <!--Listado de Productos-->
+    <div class="product">
+        <img src="Img/Camisetas/Camiseta_01.png" alt="Producto 1">
+        <h3>Tshirth Doraemon Style</h3>
+        <!-- Precio del producto en euros -->
+        <p class="price">Precio: €25</p>
+        <!-- Selección de talla del producto -->
+        <label for="tallaProducto1">Talla:</label>
+        <select id="tallaProducto1">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+        </select>
+        <!-- Botón añadir al carrito el producto -->
+        <button><a href="carrito.html" class="add-to-cart-link"></a>Añadir al Carrito</button>
+    </div>
+
+    <div class="product">
+        <img src="Img/Accesorios/Accesorio_3.png" alt="Producto 2">
+        <h3>SmarWacht Jet 3833</h3>
+        <!-- Precio del producto en euros -->
+        <p class="price">Precio: €30</p>
+        <!-- Selección de talla del producto -->
+        <label for="quantity1">Cantidad:</label>
+        <input type="number" id="quantity1" name="quantity1" min="1" max="3" value="1">
+        <!-- Botón añadir al carrito el producto -->
+        <button>Añadir al Carrito</button>
+    </div>
+
+    <div class="product">
+        <img src="Img/Accesorios/Accesorio_6.png" alt="Producto 3">
+        <h3>Gafas Poolwind Cromatic</h3>
+        <!-- Precio del producto en euros -->
+        <p class="price">Precio: €15</p>
+        <!-- Selección de talla del producto -->
+        <label for="quantity2">Cantidad:</label>
+        <input type="number" id="quantity2" name="quantity2" min="1" max="3" value="1">
+        <!-- Botón añadir al carrito el producto -->
+        <button>Añadir al Carrito</button>
+    </div>
+
+    <div class="product">
+        <img src="Img/Camisetas/Camiseta_04.png" alt="Producto 4">
+        <h3>Tshirth Yellow Slam Dunk</h3>
+        <!-- Precio del producto en euros -->
+        <p class="price">Precio: €20</p>
+        <!-- Selección de talla del producto -->
+        <label for="tallaProducto2">Talla:</label>
+        <select id="tallaProducto2">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+        </select>
+        <!-- Botón añadir al carrito el producto -->
+        <button>Añadir al Carrito</button>
+    </div>
+
+    <div class="product">
+        <img src="Img/Camisetas/Camiseta_06.png" alt="Producto 5">
+        <h3>Tshirth Motorcycle Brown</h3>
+        <!-- Precio del producto en euros -->
+        <p class="price">Precio: €15,99</p>
+        <!-- Selección de talla del producto -->
+        <label for="tallaProducto3">Talla:</label>
+        <select id="tallaProducto3">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+        </select>
+        <!-- Botón añadir al carrito el producto -->
+        <button>Añadir al Carrito</button>
+    </div>
+
+    <div class="product">
+        <img src="Img/Accesorios/Accesorio_8.png" alt="Producto 6">
+        <h3>Pulsera Breack Even</h3>
+        <!-- Precio del producto en euros -->
+        <p class="price">Precio: €18</p>
+        <!-- Selección de talla del producto -->
+        <label for="quantity3">Cantidad:</label>
+        <input type="number" id="quantity3" name="quantity3" min="1" max="3" value="1">
+        <!-- Botón añadir al carrito el producto -->
+        <button>Añadir al Carrito</button>
+    </div>
+
+    <div class="product">
+        <img src="Img/Accesorios/Accesorio_12.png" alt="Producto 7">
+        <h3>Gorra Black Style</h3>
+        <!-- Precio del producto en euros -->
+        <p class="price">Precio: €21,90</p>
+        <!-- Selección de talla del producto -->
+        <label for="quantity4">Cantidad:</label>
+        <input type="number" id="quantity4" name="quantity4" min="1" max="3" value="1">
+        <!-- Botón añadir al carrito el producto -->
+        <button>Añadir al Carrito</button>
+    </div>
+
+    <div class="product">
+        <img src="Img/Camisetas/Camiseta_08.png" alt="Producto 8">
+        <h3>Tshirth Bear and Blue</h3>
+        <!-- Precio del producto en euros -->
+        <p class="price">Precio: €32,90</p>
+        <!-- Selección de talla del producto -->
+        <label for="tallaProducto4">Talla:</label>
+        <select id="tallaProducto4">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+        </select>
+        <!-- Botón añadir al carrito el producto -->
+        <button>Añadir al Carrito</button>
+    </div>
+
+</div>
+
+<!--------------------- CLOSE PRODUCTOS ---------------------->
+
+
+<!--------------------- OPEN BANNER ---------------------->
+
+<div class="banner">
+    <a href="#"></a>
+    <img src="Img/Others/Black_Friday.png" id="img_banner" alt="">
+    </div>
+</div>
+
+<!--------------------- CLOSE BANNER ---------------------->
+
+
+<!--------------------- OPEN MARCAS ---------------------->
+
+<div class="logo-table-section">
+    <table>
+        <tr>
+            <td colspan="6" class="title"><h2>Nuestras Marcas</h2></td>
+        </tr>
+        <tr>
+            <td><img src="Img/Others/Marca_1.png" alt="Logo 1"></td>
+            <td><img src="Img/Others/Marca_2.png" alt="Logo 2"></td>
+            <td><img src="Img/Others/Marca_3.png" alt="Logo 3"></td>
+            <td><img src="Img/Others/Marca_4.png" alt="Logo 4"></td>
+            <td><img src="Img/Others/Marca_5.png" alt="Logo 5"></td>
+            <td><img src="Img/Others/Marca_6.png" alt="Logo 6"></td>
+        </tr>
+    </table>
+</div>
+
+<!--------------------- CLOSE MARCAS ---------------------->
+
+
+<!--------------------- OPEN BLOG ---------------------->
+
+<article class="blog_container">
+    <div class="photo">
+        <img src="Img/Others/Blog_1.jpg" alt="Imagen de la Sección">
+    </div>
+    <div class="txt_container">
+        <h1>Luis García | Fotógrafo streetwear en Nueva York</h1>
+        <hr>
+        <h4>Explorar el portafolio de Luis García es adentrarse en un universo visual donde la moda se fusiona con la esencia de la ciudad.</h4>
+        <hr>
+        <p>
+            Bienvenido al fascinante mundo visual de Luis García, un talentoso fotógrafo streetwear con sede en la bulliciosa ciudad de Nueva York.
+            <br><br>
+            Un ojo agudo para la moda urbana y una habilidad innata para capturar la esencia de la vida en las calles.
+            <br><br>
+            Prepárate para un viaje fotográfico que va más allá de la ropa; es una exploración profunda de la identidad, la autenticidad y la conexión humana, capturada a través del lente distintivo de Luis García.
+        </p>
+        <br>
+        <a href="#" class="btn">Leer Más</a>
+    </div>
+</article>       
+
+<!--------------------- CLOSE BLOG ---------------------->
+
+
+<!--------------------- OPEN NEWSLETTER ---------------------->
+<!-- Contenedor Newletter -->
+<div class="newletter">
+
+    <!-- Títulos y Texto -->
+    <div class="txt">
+        <h2>¡Descubre el estilo que te define! </h2>
+        <h3>Suscríbete a nuestra newsletter para recibir ofertas exclusivas, noticias de lanzamientos y acceso anticipado a nuevas colecciones.</h3>
+        <p>
+            ¿Estás listo/a para elevar tu estilo? Suscríbete a <b>Green Crow</b> hoy y encuentra la camiseta perfecta que resonará con tu personalidad.
+        </p>
+
+        <!-- Formulario de Suscripción -->
+        <form action="#" method="post" class="subscribe-form">
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico..." required>
+
+            <button type="submit">Suscribirse</button>
+
+        </form>
+
+    </div>
+    
+</div>
+
+<!--------------------- CLOSE NEWSLETTER ---------------------->
+
+
+<!--------------------- OPEN FOOTER ---------------------->
+<!-- Contenedor Footer -->
+<footer class="footer">
+    
+    <!-- Sobre Nosotros -->
+    <div class="about">
+        <h3>Sobre Nosotros</h3>
+        <ul>
+            <li><a href="link_ms.html">Misión</a></li>
+            <li><a href="link_vs.html">Visión</a></li>
+            <li><a href="link_vlr.html">Valor</a></li>
+        </ul>
+    </div>
+
+    <!-- Medios de Pago -->
+    <div class="pay_icons">
+        <h3>Medios de Pago</h3>
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-brands fa-cc-paypal"></i>
+        <i class="fa-brands fa-amazon-pay"></i>
+        <i class="fa-brands fa-google-pay"></i>
+        <i class="fa-brands fa-stripe"></i>
+
+    </div>
+
+    <!-- Redes Sociales -->
+    <div class="r_social">
+        <h3>Sigenos en</h3>
+        <a href="https://www.tiktok.com/es/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>  
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>   
+        <a href="https://www.facebook.com/?locale=es_ES" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+
+    </div>
+
+     <!-- Enlaces de Interés -->
+     <div class="others_links">
+        <h3>Enlaces de Interés</h3>
+        <ul>
+            <li><a href="link_privacy.html">Política de Privacidad</a></li>
+            <li><a href="link_cookie.html">Política de Cookies</a></li>
+            <li><a href="link_aviso.html">Aviso Legal</a></li>
+        </ul>
+    </div>
+
+</footer>
+
+<!--------------------- CLOSE FOOTER ---------------------->
+
+
+<!--------------------- OPEN COPYRIGHT ---------------------->
+
+<div class="copyright">
+    <p>&copy; 2023 GREEN CROW | Todos los derechos reservados | Designed by  Rvp</p>
+</div>
+
+<!--------------------- CLOSE COPYRIGHT ---------------------->
+
+</body>
+</html>

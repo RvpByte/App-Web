@@ -1,0 +1,647 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/*Config. General*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background: white;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+
+/* ------------------- OPEN - HEADER -------------------- */
+
+/* Contenedor Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+/* Contacto */
+.header .contacto a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.header .contacto i {
+    color: white;
+}
+
+.header .contacto a:hover {
+    color: #4caf50;
+}
+
+/* Redes Sociales */
+.header .red-social i {
+    font-size: 20px;
+    margin: 0 10px;
+    color: white;
+}
+
+.header .red-social i:hover {
+    color: #4caf50;
+}
+
+/* ------------------- CLOSE - HEADER -------------------- */
+
+
+/* ------------------- OPEN - NAVEGADOR -------------------- */
+
+.navbar {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    z-index: 1000;
+    box-shadow:  0px 2px 8px 0 gray;
+}
+
+/* Logotipo */
+.navbar .logo img {
+    width: 200px;
+    height: 50px;
+}
+
+/* Links */
+.navbar .links{
+    display: flex;
+    gap: 2rem; /*Espacio entre elementos secundarios (hijos) flexible. El valor 2rem indica que habrá un espacio de 2 unidades de tamaño de la fuente. También prodíamos poner en pixeles*/
+}
+
+.navbar .links li {
+    list-style: none;
+}
+.navbar .links a {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.navbar .links a:hover {
+    color: #4caf50;
+}
+.navbar .links i {
+    color: black;
+    font-size: 18px;
+}
+.navbar .links i:hover {
+    color: #4caf50;
+    cursor: pointer;
+}
+/* CONTENEDOR ICONOS */
+.navbar .container_icon {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Buscador interno */
+.navbar .container_icon .search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .container_icon .search-bar input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.navbar .container_icon .search-bar button {
+    padding: 8px;
+    background-color: transparent;
+    color: black; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.navbar .container_icon .search-bar button:hover {
+    color: #4caf50;
+}
+
+/* Icono Carrito */
+.navbar .container_icon .cart-icon {
+    margin-left: 10px; 
+}
+
+.navbar .container_icon .cart-icon a {
+    text-decoration: none;
+    color: black; 
+    font-size: 18px;
+}
+
+.navbar .container_icon .cart-icon a:hover {
+    color: #4caf50;
+}
+
+/* Icono Login */
+.navbar .container_icon .login-icon {
+    margin-left: 10px; 
+}
+
+.navbar .container_icon .login-icon a {
+    text-decoration: none;
+    color: black; 
+    font-size: 18px;
+}
+
+.navbar .container_icon .login-icon a:hover {
+    color: #4caf50;
+}
+
+/* ------------------- CLOSE - NAVEGADOR -------------------- */
+
+
+
+
+/* ------------------- OPEN - VIDEO -------------------- */
+/* Contenedor Video */
+.video-section {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: 760px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  0px 2px 18px 0 gray;
+}
+
+/* Estilos para el contenedor del video */
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Contenerdor Overlay Texto */
+.content-overlay {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1; /* Asegura que el contenido esté sobre el video */
+}
+
+.content-overlay h1 {
+    font-size: 2em; /* Tamaño del título */
+    margin-bottom: 20px;
+    margin-top: 80px;
+    color: white;
+}
+
+.content-overlay p {
+    font-size: 1em; /* Tamaño del párrafo */
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Botón Overlay */
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: white; /* Color de fondo del botón */
+    color: black; /* Color del texto del botón */
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+}
+
+.btn:hover{
+    background-color: #45a049; /* Cambia el color al pasar el mouse sobre el botón */
+    color: white;
+}
+
+/* ------------------- CLOSE - VIDEO -------------------- */
+
+
+
+
+/* ------------------- OPEN - PRODUCTOS -------------------- */
+/* Contenedor de Productos */
+.product-section {
+    margin: 20px 0; /*Márgen superior e inferior*/
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-section h2 {
+    text-align: center; /*Centrar título*/
+    font-size: 28px;
+    width: 100%; /* Asegurar que el título ocupe el ancho completo */
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.product-section .product {
+    padding: 10px;
+    margin: 10px; /*Espacio entre productos*/
+    text-align: center; /*Centrar contenido*/
+    width: calc(25% - 20px); /*Ancho del producto, considerando el margen*/
+    box-sizing: border-box; /* Incluye el borde en el cálculo del ancho */
+}
+
+/* Foto Producto */
+.product-section .product img {
+    max-width: 100%; /*Ajusta imagen al ancho del contenedor*/
+    height: auto; /* Mantiene proporciones de la imagen*/
+    margin-bottom: 10px; /*Espacio inferior para la imagen*/
+}
+/* Título Producto */
+.product-section .product h3 {
+    margin: 0; /*Espacio inferior para el nombre del producto*/
+    color: black
+}
+
+/* Precio Producto */
+.product-section .price {
+    font-weight: bold;
+    color: #4caf50;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Label TALLA del Producto */
+.product-section .product label, .product-section .product select {
+    display: block;
+    margin: 0 auto 10px; /* Espacio inferior para la selección de talla */
+    color: black
+}
+/* Label QUANTY del Producto */
+.product-section .product label, .product-section .product input {
+    display: block;
+    margin: 0 auto 10px; /* Espacio inferior para la selección de talla */
+    color: black
+}
+
+/* Botón Añadir */
+.product-section .product button {
+    background-color: #4caf50; /*Color fondo botón*/
+    color: white; /*Color texto botón*/
+    padding: 8px 12px;
+    border: none;
+    /*cursor: pointer;*/
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.product-section .product button:hover {
+    background-color: black; /*Cambia color de fondo al pasar el mouse sobre el botón*/
+    cursor: pointer;
+}
+
+/* ------------------- CLOSE- PRODUCTOS -------------------- */
+
+
+
+
+/* -------------------- OPEN - BANNER ------------------- */
+
+/* Banner Publicitario */
+.banner, img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------------- CLOSE - BANNER ------------------- */
+
+
+
+
+/* -------------------- OPEN - MARCAS ------------------- */
+/* Logos de Marcas */
+.logo-table-section {
+    margin: 20px 0; /*Márgenes superior e inferior*/
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /*Colapsa bordes de la tabla*/
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 0;
+    background-color: white;
+}
+
+/* Celda de logo */
+table img {
+    display: block; /*Elimina espacio adicional debajo de las imágenes*/
+    margin: 10px auto; /*Márgenes para centrar las imágenes en cada celda*/
+}
+
+/* -------------------- OPEN - MARCAS ------------------- */
+
+
+
+
+/* -------------------- OPEN - BLOG --------------------- */
+/* Contenedor Blog */
+.blog_container {
+    display: flex;
+    margin: 20px;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 50px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+/* Foto Blog */
+.blog_container .photo {
+    width: 60%;
+}
+
+/* Contenedor Texto Blog */
+.blog_container .txt_container {
+    width: 60%;
+    padding: 0 20px;
+}
+
+.blog_container .txt_container h1 {
+    color: black;
+    font-size: 36px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.blog_container .txt_container h4 {
+    color: #4caf50;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.blog_container .txt_container p {
+    color: black;
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+/* Botón "Leer Más" */
+.blog_container .btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.blog_container .btn:hover {
+    background-color: #45a049;
+}
+
+/* -------------------- CLOSE - BLOG --------------------- */
+
+
+
+
+/* -------------------- OPEN NEWSLETTER --------------------- */
+/* Contenedor Newletter */
+.newletter {
+    background-color: white;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 50px;
+}
+
+/* CONTENEDOR TXT */
+/* Título, Subtítulo y Texto plano */
+.newletter .txt {
+    background-color: white;
+    padding: 25px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.newletter .txt h2 {
+    color: black;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.newletter .txt h3 {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.newletter .txt p {
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Formulario Suscripción */
+.subscribe-form {
+    margin: 5px auto; /* Centra horizontalmente y agrega margen superior e inferior */
+    background-color: white;
+    max-width: 500px; /* Ajusta el ancho máximo según tus preferencias */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    padding: 10px;
+}
+
+.subscribe-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: black; /* Color del texto del formulario */
+    text-align: justify;
+}
+
+.subscribe-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid black; /* Borde del campo de entrada */
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.subscribe-form button {
+    background-color: black; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    /*cursor: pointer;*/
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+    background-color: #45a049; /* Cambia el color al pasar el mouse sobre el botón */
+}
+
+/* -------------------- CLOSE NEWSLETTER --------------------- */
+
+
+
+
+/* -------------------- OPEN FOOTER -------------------- */
+.footer {
+    background-color: white;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-content: center;
+    box-shadow:  0px 2px 8px 0 gray;
+}
+
+/* Sobre Nosotros */
+.footer .about h3 {
+    color: black;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.footer .about ul{
+    list-style: none;
+}
+
+.footer .about li a {
+    color: black;
+    display: flex;
+    padding: 4px;
+    text-decoration: none;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.footer .about li a:hover {
+    color: #4caf50;
+}
+
+/* Medios de Pago */
+.footer .pay_icons {
+    text-align: center;
+}
+
+.footer .pay_icons h3 {
+    color: black;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.footer .pay_icons i {
+    color: black;
+    padding: 5px;
+    font-size: 24px;
+}
+
+/* Redes Sociales */
+.footer .r_social {
+    text-align: center;
+}
+
+.footer .r_social h3 {
+    color: black;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.footer .r_social a {
+    color: black;
+    padding: 4px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.footer .r_social a i {
+    font-size: 24px;
+}
+
+.footer .r_social a i:hover {
+    color: #4caf50;
+}
+
+/* Enlaces de Interés */
+.footer .others_links h3 {
+    color: black;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.footer .others_links ul {
+    list-style: none;
+}
+
+.footer .others_links a {
+    color: black;
+    display: flex;
+    padding: 4px;
+    text-decoration: none;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.footer .others_links a:hover {
+    color: #4caf50;
+}
+
+/* -------------------- CLOSE FOOTER -------------------- */
+
+
+
+
+/* -------------------- OPEN COPYRIGHT -------------------- */
+/* Copyright */
+.copyright {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/* -------------------- CLOSE COPYRIGHT -------------------- */
+
+/* box-shadow:  0px 2px 18px 0 gray;*/
